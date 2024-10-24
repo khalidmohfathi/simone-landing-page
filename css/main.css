@@ -1,0 +1,155 @@
+:root {
+   --main-color: #20c997;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-family: "Poppins", sans-serif !important;
+}
+
+a {
+   text-decoration: none !important;
+}
+
+.main-bg {
+   background-color: var(--main-color) !important;
+}
+
+.main-text {
+   color: var(--main-color) !important;
+}
+
+nav a {
+   color: white !important;
+}
+
+nav a:hover {
+   color: var(--main-color) !important;
+}
+
+.navbar-toggler:focus {
+   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--main-color) !important;
+}
+
+.fa-facebook-f:hover {
+   color: #3b5998;
+}
+
+.fa-twitter:hover {
+   color: #00acee;
+}
+
+.fa-dribbble:hover {
+   color: #ea4c89;
+}
+
+.fa-google:hover{
+   color: #dd4b39;
+}
+
+.fa-github:hover{
+   color: #333;
+}
+
+#home {
+   background-image: url(../images/intro-bg.jpg);
+   background-attachment: fixed;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.home-overlay {
+   position: absolute;
+   background-color: rgba(17, 20, 24, 0.8);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+
+.home-btn {
+   border-color: var(--main-color) !important;
+   color: var(--main-color);
+   transition: all 0.4s;
+}
+
+.home-btn:hover {
+   background-color: #20c997;
+   color: white;
+}
+
+.header-text h2 {
+   font-size: calc(1.95rem + 6vw) !important;
+}
+
+.header-sperate {
+   width: 80px;
+   margin: auto;
+   border-color: var(--main-color) !important;
+}
+
+.services-icon {
+   width: 4rem;
+   height: 4rem;
+   background-color: white;
+   color: var(--main-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#portfolio .port_overlay {
+   background-color: rgba(0, 0, 0, 0.7);
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   top: 0;
+   transition: all 0.3s;
+}
+
+#portfolio .port_hov img {
+   transition: all 0.3s;
+}
+
+#portfolio .port_hov:hover img {
+   filter: blur(3px);
+   transform: scale(1.05);
+}
+
+#portfolio .port_hov:hover .port_overlay {
+   opacity: 1;
+}
+
+#testimonial .carousel-indicators {
+   position: static;
+   margin: 1rem 0px;
+}
+
+#testimonial .carousel-indicators button{
+   border-radius: 50%;
+   width: 0.8rem;
+   height: 0.8rem;
+   background-color: gray;
+}
+
+#testimonial .carousel-indicators button.active{
+   background-color: var(--main-color);
+}
+
+#contact a , footer a{
+   color: #4d555a;
+}
+
+footer a:hover{
+   color: var(--main-color);
+}
